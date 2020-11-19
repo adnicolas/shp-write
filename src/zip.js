@@ -30,9 +30,9 @@ module.exports = function(gj, options) {
 
     var generateOptions = { compression:'STORE', type:'base64' };
 
-    if (!process.browser) {
+    /*if (!process.browser) {
       generateOptions.type = 'nodebuffer';
-    }
+    }*/
     
     return zip.generateAsync(generateOptions);
 };
